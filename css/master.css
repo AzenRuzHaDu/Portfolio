@@ -12,11 +12,9 @@
 
 *, ::before, ::after {
 font-family: 'mainFont';
-margin: 0;
+ margin: 0;
 padding: 0;
-box-sizing: border-box;
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+box-sizing: border-box; */
 }
 
 
@@ -33,7 +31,7 @@ h1 {
   font-size: 250%;
   color: #689d6a;
   /*margin: 50px 0;*/
-  padding: 40px 0px 40px 40px;
+   padding: 40px 0px 40px 40px;
 
   font-family: 'mainFont';
 
@@ -51,62 +49,31 @@ p {
 
 }
 
-.title {
-  display: flex;
-  align-items: center;
-    border-bottom: 1px dashed gray;
-
-}
-
-
-.super-container{
-height: 100vh;
-overflow-y: scroll;
-scroll-snap-type : y mandatory;
-}
-
-/*cards*/
-.container{
-
-  height: 100vh;
-  max-width: 1800px;
-  width:90%;
-  margin: auto;
-  margin-top: 0px;
-  scroll-snap-align: center;
-
-}
 
 
 
 .card-container {
   position: relative;
-  width: 90%;
-  max-width: 1700px;
-  margin-right: auto;
+  left: 5vw;
+  right: 5vh;
+  width: 80vw;
   margin-left: auto;
+  margin-right: auto;
+   max-width: 1700px;
+
   margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 5%;
 }
 
-.card-wrapper {
-  position: relative;
-  min-height: 350px;
-  perspective: 800px;
-  perspective-origin: top;
-
-}
 
 
 .card {
   position: relative;
-  height: 100%;
-  width: auto;
-  margin-bottom: 10%;
-
-
+  height: auto;
+  width: 80%;
+  /* margin-bottom: 10%; */
   color: #ebc6c6;
   font-weight: bold;
 
@@ -115,9 +82,11 @@ scroll-snap-type : y mandatory;
 
 .card-front
  {
-  position: absolute;
-  height : 100%;
-  width: 100%;
+    display: flex;
+   align-items: center;
+    height : 40vh;
+   width: 100%;
+  /* width: auto; */
   padding: 30px;
   border-radius: 8px;
 
@@ -127,7 +96,8 @@ scroll-snap-type : y mandatory;
   background:  #282828 ;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+
 
 }
 
@@ -196,7 +166,7 @@ scroll-snap-type : y mandatory;
 
 .input-group input {
   padding: 10px;
-  font-size: 8px ;
+  font-size: 10px ;
   flex-basis: 100% ;
   min-width: 200px;
   border: none;
@@ -253,4 +223,45 @@ scroll-snap-type : y mandatory;
 .h2-TroiennBot {
   padding-bottom: 45px;
 }
+
+
+@media  (max-width: 500px) {
+
+  .card-container{
+
+    left: 0vw;
+    right: 0vw;
+  }
+   .card {
+        width: 90%;
+    }
+  .card-front {
+    height: 60vh;
+  }
+   .h1 {padding: 0px;
+   background-color: red;}
+
+    .input-container label {
+     font-size: 20px; }
+
+  .input-group input {
+       padding: 10px;
+       font-size: 20px ;
+     }
+
+     .input-container button {
+       background: #689d6a;
+       width: 30px;
+       height: 45px;}
+
+    .label-mutations {
+         padding: 0px 10px 10px;
+         font-size: 50px;
+       }
+       label {
+         font-size: 20px;
+       }
+
+        .input-container .label-mutations {
+         font-size: 20px;}
 
