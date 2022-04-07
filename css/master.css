@@ -41,16 +41,84 @@ h1 {
 h2 {
   color: #98971a;
   font-size: 180%;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
 }
 
 p {
-  color: #ebdbb2;
+  background-color: #282828;
+  color : #ebdbb2;
+  font-weight: bold;
+}
 
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+color: #458588;
+}
+
+a:visited {
+color:#83a598;
+}
+
+a:hover {
+color: #458588;
+}
+
+.premierep {
+  height: 100vh;
+}
+
+.secondep {
+  height: 100vh;
+}
+
+.sous-titre-intro {
+padding-left: 40px;
 }
 
 
+.container-presentation {
+  background-color: #282828;
+  margin: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.parcours , .informatique {
+  margin-bottom: 5vh;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #689d6a;
+  color: #282828;
+  margin: 2vw;
+  width: 20%;
+  height: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+
+.contact a {
+color: #fbf1c7;
+
+}
 
 
 .card-container {
@@ -268,4 +336,12 @@ p {
 
         .input-container .label-mutations {
          font-size: 20px;}
+
+         .premierep {
+           height: auto;
+         }
+
+         .secondep {
+           height: none;
+         }
 
