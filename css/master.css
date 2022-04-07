@@ -97,7 +97,7 @@ padding-left: 40px;
 }
 
 .contact {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #689d6a;
@@ -112,11 +112,30 @@ padding-left: 40px;
   border-radius: 8px;
   font-weight: bold;
   margin-top: 10px;
+  /* display: flex;
+ align-items: center;
+ justify-content: center;
+  display: inline;
+  width: 20%;
+  height: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #689d6a; */
+
+
 
 }
 
 .contact a {
 color: #fbf1c7;
+outline: none;
+text-decoration: none;
+font-weight: bold;
+text-align: center;
 
 }
 
