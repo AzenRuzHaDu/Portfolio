@@ -22,7 +22,8 @@ box-sizing: border-box; */
 body {
   background-color: #1d2021;
   border: 0;
-  margin: 0;
+  /* margin: 0; */
+
 
 }
 
@@ -59,6 +60,7 @@ p {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+
    max-width: 1700px;
 
   margin-top: 5%;
@@ -77,6 +79,7 @@ p {
   color: #ebc6c6;
   font-weight: bold;
 
+
 }
 
 
@@ -89,6 +92,7 @@ p {
   /* width: auto; */
   padding: 30px;
   border-radius: 8px;
+    margin-bottom: 50px;
 
 }
 
