@@ -6,7 +6,7 @@ const boutonGeriou = document.querySelector(".bouton_geriou");
 const searchCity = (ev) => {
   ev.preventDefault(); //prevent submitting
   let city = document.getElementById("input-geriou").value;
-  url = new URL("http://127.0.0.1:8000/" + city +'/')
+  url = new URL("https://geriou.azenruz.repl.co" + city +'/')
   fetch(url)
     .then(function(res) {
       return res.json()
